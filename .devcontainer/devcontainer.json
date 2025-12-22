@@ -1,16 +1,23 @@
 {
-    "name": "C++ Development",
+    "name": "C++ HTTP Server",
     "build": {
-        "dockerfile": "Dockerfile"
+        "dockerfile": "Dockerfile",
+        "context": ".."
     },
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-vscode.cpptools",
                 "ms-vscode.cmake-tools"
-            ]
+            ],
+            "settings": {
+                "cmake.buildDirectory": "${workspaceFolder}/build"
+            }
         }
     },
     "workspaceFolder": "/workspace",
-    "remoteUser": "root"
+    "forwardPorts": [8080],
+    
+    // Уберите postCreateCommand или сделайте его проще
+    "postCreateCommand": "echo 'Container ready! Use: mkdir -p build && cd build && cmake .. && make'"
 }
