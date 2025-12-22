@@ -1,0 +1,16 @@
+{
+    "name": "C++ Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root"
+}

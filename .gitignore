@@ -1,0 +1,10 @@
+build/
+*.exe
+*.out
+
+.vscode/
+*.swp
+
+CMakeCache.txt
+CMakeFiles/
+Makefile
