@@ -25,12 +25,12 @@ int main()
     std::signal(SIGINT, signalHandler);
     std::signal(SIGTERM, signalHandler);
     
-    HttpEchoServer echoServer(8080);
+    HttpEchoServer echoServer(9090);
     server = &echoServer;
     
     echoServer.start();
     
-    std::cout << "\nServer is running on http://localhost:8080" << std::endl;
+    std::cout << "\nServer is running on http://localhost:9090" << std::endl;
     std::cout << "Press Ctrl+C to stop the server\n" << std::endl;
     
     // Бесконечный цикл или ожидание
