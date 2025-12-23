@@ -17,7 +17,5 @@
     },
     "workspaceFolder": "/workspace",
     "forwardPorts": [8080],
-    
-    // Уберите postCreateCommand или сделайте его проще
     "postCreateCommand": "echo 'Container ready! Use: mkdir -p build && cd build && cmake .. && make'"
 }

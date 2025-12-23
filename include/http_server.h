@@ -1,10 +1,9 @@
 #ifndef HTTP_SERVER_H
 #define HTTP_SERVER_H
 
-#include <iostream>
-#include <string>
 #include <thread>
 #include <memory>
+#include <string>
 
 class HttpEchoServer {
 private:
@@ -20,8 +19,7 @@ public:
     
     void start();
     void stop();
-    bool isRunning() const { return running_; }
-    int getPort() const { return port_; }
+    bool isRunning() const;
 };
 
-#endif  
+#endif

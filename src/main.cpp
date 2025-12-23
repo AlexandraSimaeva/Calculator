@@ -3,6 +3,13 @@
 #include <csignal>
 #include <thread>
 #include <chrono>
+#include <string>
+#include <sstream>
+#include <memory>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <unistd.h>
+#include <cstring>
 
 HttpEchoServer* server = nullptr;
 
